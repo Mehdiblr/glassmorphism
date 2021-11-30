@@ -1,0 +1,16 @@
+body {
+  background-image: -webkit-gradient(linear, right bottom, left top, from(#d16b6b), color-stop(#db6b7e), color-stop(#e26c94), color-stop(#e371ac), color-stop(#e078c5), color-stop(#cb8be0), color-stop(#b09df4), color-stop(#93aeff), color-stop(#66c5ff), color-stop(#35daff), color-stop(#2decff), to(#5ffbf1));
+  background-image: linear-gradient(to left top, #d16b6b, #db6b7e, #e26c94, #e371ac, #e078c5, #cb8be0, #b09df4, #93aeff, #66c5ff, #35daff, #2decff, #5ffbf1);
+}
+
+#timeline {
+  width: 90%;
+  height: 400px;
+  margin: 15px auto;
+  border: 2px solid #f9f9f9;
+  border-radius: 7px;
+  padding: 5px;
+  background: #ffffff75;
+  color: #fff;
+}
+/*# sourceMappingURL=style.css.map */
