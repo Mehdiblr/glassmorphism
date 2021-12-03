@@ -1,10 +1,18 @@
 // Variables
 $timeline_border:#ffffff6b;
 $timeline_background: #ffffff75;
+$main_menu_backgrund:#f3f3f3ab;
+$purple:purple;
+$black:#000;
+$gray:gray;
 $white: #fff;
 // Mixins
 @mixin background {
     background-image: linear-gradient(to left top, #d16b6b, #db6b7e, #e26c94, #e371ac, #e078c5, #cb8be0, #b09df4, #93aeff, #66c5ff, #35daff, #2decff, #5ffbf1);
+}
+
+@mixin margin_botton {
+    margin-bottom: 18px;
 }
 
 // Custom style
@@ -25,14 +33,14 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     align-content: center;
-    justify-content: space-between;
+    justify-content: center;
     align-items: flex-start;
     //main menu style
     .main_menu {
         width: 24%;
         padding: 25px 3px;
-        background: #ffffffab;
-        color: black;
+        background: $main_menu_backgrund;
+        color: $black;
         display: flex;
         flex-direction: column;
         flex-wrap: nowrap;
@@ -52,8 +60,8 @@ body {
             i {
                 padding: 10px;
                 border-radius: 50%;
-                color: gray;
-                background-color: white;
+                color: $gray;
+                background-color: $white;
             }
             h4 {
                 display: inline-block;
@@ -64,7 +72,7 @@ body {
         }
         .menu_title:hover {
             i {
-                color: purple;
+                color: $purple;
             }
             h4 {
                 font-weight: 600;
@@ -76,7 +84,151 @@ body {
                 padding: 15px;
                 background-image: linear-gradient(to right top, #051937, #002057, #002577, #002897, #1725b5);
                 border-radius: 50%;
-                color: white;
+                color: $white;
+            }
+        }
+    }
+    .job_result {
+        width: 60%;
+        background-color: #ffffff40;
+        padding: 10px 50px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: flex-start;
+        align-items: flex-start;
+        h3 {
+            text-align: left;
+            color: black;
+            font-weight: 600;
+            font-size: 1.5rem;
+            @include margin_botton();
+        }
+        input[type=text] {
+            width: 100%;
+            outline: 0;
+            border: 1px solid white;
+            padding: 15px 50px;
+            border-radius: 20px 20px 20px 20px;
+            background: #ebebeb9e;
+            color: white;
+            @include margin_botton();
+        }
+        span.search_icon {
+            position: absolute;
+            left: 64px;
+            top: 56px;
+            color: gray;
+            font-size: 2rem;
+            @include margin_botton();
+        }
+        span.search_text {
+            position: absolute;
+            right: 60px;
+            top: 52px;
+            padding: 10px 30px;
+            border-radius: 20px;
+            font-size: 1.4rem;
+            box-shadow: 0px 0px 6px #950a95;
+            background-image: linear-gradient(to right top, #370537, #540754, #740974, #950a95, #b709b7);
+            @include margin_botton();
+        }
+        p.result_count {
+            padding: 20px 2px;
+            background: #cdcdcd;
+            width: 100%;
+            color: #383838;
+            text-align: center;
+            border-radius: 20px;
+            font-size: 1.5rem;
+            @include margin_botton();
+        }
+        article {
+            width: 100%;
+            background: white;
+            border-radius: 20px;
+            border: 1px solid white;
+            color: black;
+            padding: 15px;
+            box-shadow: 0px 0px 5px #b7b7b7;
+            @include margin_botton();
+            header {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                align-content: center;
+                align-items: center;
+                justify-content: flex-start;
+                margin-bottom: 1rem;
+                figure {
+                    font-size: 3rem;
+                    border: 1px solid purple;
+                    border-radius: 20px;
+                    padding: 1rem;
+                    margin: 0 1rem 0 0;
+                }
+            }
+            .job_detail {
+                display: flex;
+                flex-direction: column;
+                flex-wrap: nowrap;
+                align-content: center;
+                align-items: flex-start;
+                width: 70%;
+                p {
+                    font-weight: 700;
+                    font-size: 1.4rem;
+                }
+                .tag_detail {
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: nowrap;
+                    justify-content: flex-start;
+                    align-items: center;
+                    align-content: center;
+                    width: 100%;
+                    i {
+                        color: lightblue;
+                        font-size: 1.3rem;
+                    }
+                    span {
+                        color: gray;
+                        margin-left: 8px;
+                        span {
+                            margin-left: 4px;
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                        }
+                    }
+                    span:first-child {
+                        margin-left: 0;
+                    }
+                }
+            }
+            .job_salary {
+                width: 100%;
+                text-align: right;
+                p {
+                    font-size: 1.4rem;
+                    font-weight: 600;
+                }
+            }
+            >p {
+                font-weight: 400;
+                font-size: 1.4rem
+            }
+            .tags {
+                padding: 20px 0px;
+                span {
+                    padding: 10px 12px;
+                    background-color: #e0ade63b;
+                    color: purple;
+                    border-radius: 5px;
+                    margin-right: 15px;
+                    font-size: 1.4rem;
+                }
             }
         }
     }
