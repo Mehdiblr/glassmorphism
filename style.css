@@ -5,12 +5,106 @@ body {
 
 #timeline {
   width: 90%;
-  height: 400px;
+  height: auto;
   margin: 15px auto;
-  border: 2px solid #f9f9f9;
+  border: 2px solid #ffffff6b;
   border-radius: 7px;
-  padding: 5px;
   background: #ffffff75;
   color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#timeline .main_menu {
+  width: 24%;
+  padding: 25px 3px;
+  background: #ffffffab;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#timeline .main_menu .menu_title {
+  font-size: 2rem;
+  padding-bottom: 40px;
+  width: 230px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#timeline .main_menu .menu_title i {
+  padding: 10px;
+  border-radius: 50%;
+  color: gray;
+  background-color: white;
+}
+
+#timeline .main_menu .menu_title h4 {
+  display: inline-block;
+  font-weight: 400;
+  margin-left: 15px;
+  font-size: 1.4rem;
+}
+
+#timeline .main_menu .menu_title:hover i {
+  color: purple;
+}
+
+#timeline .main_menu .menu_title:hover h4 {
+  font-weight: 600;
+  cursor: pointer;
+}
+
+#timeline .main_menu .menu_title:first-child i {
+  padding: 15px;
+  background-image: -webkit-gradient(linear, left bottom, right top, from(#051937), color-stop(#002057), color-stop(#002577), color-stop(#002897), to(#1725b5));
+  background-image: linear-gradient(to right top, #051937, #002057, #002577, #002897, #1725b5);
+  border-radius: 50%;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */
