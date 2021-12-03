@@ -147,11 +147,11 @@ body {
 #timeline .job_result input[type=text] {
   width: 100%;
   outline: 0;
-  border: 1px solid white;
+  border: 1px solid #fff;
   padding: 15px 50px;
   border-radius: 20px 20px 20px 20px;
   background: #ebebeb9e;
-  color: white;
+  color: #fff;
   margin-bottom: 18px;
 }
 
@@ -191,10 +191,10 @@ body {
 
 #timeline .job_result article {
   width: 100%;
-  background: white;
+  background: #fff;
   border-radius: 20px;
-  border: 1px solid white;
-  color: black;
+  border: 1px solid #fff;
+  color: #000;
   padding: 15px;
   -webkit-box-shadow: 0px 0px 5px #747474;
           box-shadow: 0px 0px 5px #747474;

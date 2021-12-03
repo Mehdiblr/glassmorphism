@@ -2,6 +2,15 @@
     $timeline_border:#ffffff6b;
     $timeline_background: #ffffff75;
     $main_menu_backgrund:#f3f3f3ab;
+    $menu_title_hover:#002897;
+    $job_result_background:#ffffff40;
+    $search_text_color :#950a95;
+    $input_type:#ebebeb9e;
+    $article_color:#747474;
+    $result_count:#383838;
+    $lighblue:lightblue;
+    $article_tag_border:#e0ade63b;
+    $sidebar_background:#ffffffbf;
     $purple:purple;
     $black:#000;
     $gray:gray;
@@ -76,7 +85,7 @@
             }
             .menu_title:hover {
                 i {
-                    color: #002897;
+                    color: $menu_title_hover;
                 }
                 h4 {
                     font-weight: 600;
@@ -93,9 +102,10 @@
                 }
             }
         }
+        // Job result in main menu section
         .job_result {
             width: 60%;
-            background-color: #ffffff40;
+            background-color: $job_result_background;
             padding: 25px 50px;
             position: relative;
             display: flex;
@@ -114,18 +124,18 @@
             input[type=text] {
                 width: 100%;
                 outline: 0;
-                border: 1px solid white;
+                border: 1px solid $white;
                 padding: 15px 50px;
                 border-radius: 20px 20px 20px 20px;
-                background: #ebebeb9e;
-                color: white;
+                background: $input_type;
+                color: $white;
                 @include margin_botton();
             }
             span.search_icon {
                 position: absolute;
                 left: 64px;
                 top: 70px;
-                color: gray;
+                color: $gray;
                 font-size: 2rem;
             }
             span.search_text {
@@ -135,28 +145,29 @@
                 padding: 10px 30px;
                 border-radius: 20px;
                 font-size: 1.4rem;
-                box-shadow: 0px 0px 6px #950a95;
+                box-shadow: 0px 0px 6px $search_text_color;
                 background-image: linear-gradient(to right top, #370537, #540754, #740974, #950a95, #b709b7);
                 @include margin_botton();
             }
             p.result_count {
                 padding: 20px 2px;
                 width: 100%;
-                color: #383838;
+                color: $result_count;
                 text-align: center;
                 border-radius: 20px;
                 font-size: 1.5rem;
                 @include result_background();
                 @include margin_botton();
             }
+            // Article Result
             article {
                 width: 100%;
-                background: white;
+                background: $white;
                 border-radius: 20px;
-                border: 1px solid white;
-                color: black;
+                border: 1px solid $white;
+                color: $black;
                 padding: 15px;
-                box-shadow: 0px 0px 5px #747474;
+                box-shadow: 0px 0px 5px $article_color;
                 @include margin_botton();
                 header {
                     display: flex;
@@ -168,7 +179,7 @@
                     margin-bottom: 1rem;
                     figure {
                         font-size: 3rem;
-                        border: 1px solid purple;
+                        border: 1px solid $purple;
                         border-radius: 20px;
                         padding: 1rem;
                         margin: 0 1rem 0 0;
@@ -194,11 +205,11 @@
                         align-content: center;
                         width: 100%;
                         i {
-                            color: lightblue;
+                            color: $lightblue;
                             font-size: 1.3rem;
                         }
                         span {
-                            color: gray;
+                            color: $gray;
                             margin-left: 8px;
                             span {
                                 margin-left: 4px;
@@ -227,8 +238,8 @@
                     padding: 20px 0px;
                     span {
                         padding: 10px 12px;
-                        background-color: #e0ade63b;
-                        color: purple;
+                        background-color: $article_tag_border;
+                        color: $purple;
                         border-radius: 5px;
                         margin-right: 15px;
                         font-size: 1.4rem;
@@ -236,10 +247,11 @@
                 }
             }
         }
+        //Sidebar section
         .side_bar {
             width: 18%;
-            background: #ffffffbf;
-            color: black;
+            background: $sidebar_background;
+            color: $black;
             display: flex;
             flex-direction: column;
             flex-wrap: nowrap;
@@ -271,7 +283,7 @@
             }
             h3 {
                 padding: 15px 0;
-                border-bottom: 1px solid black;
+                border-bottom: 1px solid $black;
                 width: 100%;
             }
             h4 {
@@ -285,7 +297,7 @@
                     padding: 5px 0;
                     font-size: 1.3rem;
                     span {
-                        color: gray;
+                        color: $gray;
                     }
                 }
             }
