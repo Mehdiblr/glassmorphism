@@ -168,6 +168,7 @@
                 color: $black;
                 padding: 15px;
                 box-shadow: 0px 0px 5px $article_color;
+                opacity: 0.79;
                 @include margin_botton();
                 header {
                     display: flex;
@@ -205,7 +206,7 @@
                         align-content: center;
                         width: 100%;
                         i {
-                            color: $lightblue;
+                            color: $lighblue;
                             font-size: 1.3rem;
                         }
                         span {
@@ -245,6 +246,9 @@
                         font-size: 1.4rem;
                     }
                 }
+            }
+            article:hover{
+                opacity: 1;
             }
         }
         //Sidebar section
@@ -296,8 +300,18 @@
                 li {
                     padding: 5px 0;
                     font-size: 1.3rem;
+                    input[type=checkbox]{
+                        padding: 5px;
+                        display: inline-block;
+                        box-sizing: border-box;
+                        width: 20px;
+                        height: 20px;
+                        vertical-align: middle;
+                    }
+
                     span {
                         color: $gray;
+
                     }
                 }
             }

@@ -166,7 +166,7 @@ body {
 #timeline .job_result span.search_text {
   position: absolute;
   right: 60px;
-  top: 67px;
+  top: 66px;
   padding: 10px 30px;
   border-radius: 20px;
   font-size: 1.4rem;
@@ -198,6 +198,7 @@ body {
   padding: 15px;
   -webkit-box-shadow: 0px 0px 5px #747474;
           box-shadow: 0px 0px 5px #747474;
+  opacity: 0.79;
   margin-bottom: 18px;
 }
 
@@ -322,10 +323,14 @@ body {
   font-size: 1.4rem;
 }
 
+#timeline .job_result article:hover {
+  opacity: 1;
+}
+
 #timeline .side_bar {
   width: 18%;
   background: #ffffffbf;
-  color: black;
+  color: #000;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -384,7 +389,7 @@ body {
 
 #timeline .side_bar h3 {
   padding: 15px 0;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid #000;
   width: 100%;
 }
 
@@ -401,6 +406,16 @@ body {
 #timeline .side_bar ul li {
   padding: 5px 0;
   font-size: 1.3rem;
+}
+
+#timeline .side_bar ul li input[type=checkbox] {
+  padding: 5px;
+  display: inline-block;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
 }
 
 #timeline .side_bar ul li span {
